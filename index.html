@@ -551,39 +551,7 @@
 														</ol>
 													</td>
 												</tr>
-												<tr>
-													<th colspan="2">문제 발생과 해결 과정</th>
-												</tr>
-												<tr>
-													<td colspan="2">
-														<ol>
-															<li><span class="b-title">AJAX를 사용한 주문상태 변경</span>
-																<ul>
-																	<li><span class="s-title">문제</span>
-																		<div>- 상태 변경 버튼을 누르면 DB의 데이터는 변경되지만, View 페이지에서는 데이터가 공백으로 보이거나 해당 상태의 카테고리로 이동하지 않는 문제가 발생</div>
-																	</li>
-																	<li><span class="s-title">해결</span>
-																		<div>- 변경된 POST 요청이 성공한 후에 상태 리스트를 호출하는 함수가 없었기 때문에, 로드 함수를 분리하여 개별적인 함수를 만듦</div>
-																		<div>- 해당 상태의 카테고리로 이동하기 위해 location.reload() 함수를 사용</div>
-																	</li>
-																</ul>
-															</li>
-															<li><span class="b-title">다중 이미지 파일 수정</span>
-																<ul>
-																	<li><span class="s-title">문제</span>
-																		<div>- 제품 수정 폼으로 이동한 후 아무 작업을 하지 않고 수정을 위해 POST 요청을 보냈을 때, 제품 상세 이미지가 사라지고 데이터베이스(DB)에는 공백이 들어가는 문제가 발생</div>
-																	</li>
-																	<li><span class="s-title">문제점 발견</span>
-																		<div>- 히든 태그에 이미지 파일 이름을 콤마(,)로 구분한 문자열로 저장했으나, POST 요청 시 다중 파일 입력태그가 null 값으로 전송되어 setter 메서드에서 공백으로 설정되어 업데이트되는 문제점을 발견</div>
-																	</li>
-																	<li><span class="s-title">해결</span>
-																		<div>- 컨트롤러에서 히든 태그의 값을 다시 별도로 받아와, 다중 파일 입력태그의 값이 null일 때 원래의 값을 설정하기 위해 set 메서드를 사용하여 업데이트</div>
-																	</li>
-																</ul>
-															</li>
-														</ol>
-													</td>
-												</tr>
+												
 											</table>
 										</div>
 									</div>
@@ -591,7 +559,7 @@
 							</div>
 						</div>
 
-						<!--신발커뮤니티-->
+						<!--삼삼오오커뮤니티-->
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article" id="p2">
